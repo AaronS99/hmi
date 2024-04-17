@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/hmi/static/css/main.0f47257f.css",
+    "main.js": "/hmi/static/js/main.ce34271f.js",
+    "static/media/dfkiLogo.jpg": "/hmi/static/media/dfkiLogo.e3bc269dd8469a14dcaf.jpg",
+    "static/media/6GHUB.png": "/hmi/static/media/6GHUB.25d6cc6203844138c05f.png",
+    "static/media/pic2.png": "/hmi/static/media/pic2.3606e4cbfb7b587acf36.png",
+    "static/media/pic1.png": "/hmi/static/media/pic1.da8a35710eabe302e81a.png",
+    "static/media/imgTag.png": "/hmi/static/media/imgTag.e4ecb50c7e11d8f0761a.png",
+    "index.html": "/hmi/index.html",
+    "main.0f47257f.css.map": "/hmi/static/css/main.0f47257f.css.map",
+    "main.ce34271f.js.map": "/hmi/static/js/main.ce34271f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f47257f.css",
+    "static/js/main.ce34271f.js"
+  ]
+}
