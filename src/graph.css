@@ -1,0 +1,16 @@
+.chart {
+    height: 100%;
+    
+}
+#laser {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+}
+
+#inner{
+    aspect-ratio: 1; 
+}
+.charti {
+}
