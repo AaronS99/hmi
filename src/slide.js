@@ -47,8 +47,8 @@ function Slideshow() {
           <img src={exImg}  className="image slide"></img>
           </div>
         ))} */}
-        <img src={im1}  className="image slide"></img>
-        <img src={im2}  className="image slide"></img>
+        <img src={im1} className="image slide"></img>
+        <img src={im2} className="image slide"></img>
         {/* <img src={exImg}  className="image slide"></img>
         <img src={exImg}  className="image slide"></img> */}
       </div>

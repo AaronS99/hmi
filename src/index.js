@@ -40,7 +40,7 @@ client.on("connect", () => {
     client.on("message", (topic, message) => {
       // message is Buffer
       if(topic == "gui"){
-        console.log(message);
+        //console.log(message);
       }
       else if(topic == "buttons") {
 
@@ -52,7 +52,7 @@ client.on("connect", () => {
       // client.end();
     });
     if (!err) {
-        client.publish("gui", "Hello mqtt");
+        // client.publish("gui", "Hello mqtt");
     }
   });
 });
@@ -60,12 +60,7 @@ client.on("connect", () => {
 
 let data=[0,0];
 
-setTimeout(()=>{
-  setInterval(() => {
-    data = [-1+Math.round(Math.random()*20)/10, -1+Math.round(Math.random()*20)/10];
-    root.render(<Main />);
-  }, 100);
-},1000)
+
 
 
 export function getTime() {
@@ -90,7 +85,12 @@ function buttonClick(e) {
 // }]);
 // }
 
-
+setTimeout(()=>{
+  setInterval(() => {
+    data = [-1+Math.round(Math.random()*20)/10, -1+Math.round(Math.random()*20)/10];
+    root.render(<Main />);
+  }, 100);
+},1000)
 
 class Main extends React.Component {
   render() {

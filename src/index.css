@@ -44,6 +44,7 @@ body {
   height: 9vh;
   border: 1px solid black;
   margin: 10%;
+  font-size: x-large;
 }
 #bigData{
   width: 55%;

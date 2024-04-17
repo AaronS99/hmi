@@ -1,23 +1,24 @@
 .slideshow {
     margin: 0 auto;
     overflow: hidden;
-    max-width: 75%;
+    max-width: 70%;
   }
   
   .slideshowSlider {
     white-space: nowrap;
     transition: ease 1000ms;
-    margin: -80px;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    margin: -80px; 
+    /* margin-top: -50px;
+    margin-bottom: -50px; */
+    margin-bottom: 0;
     /* margin: 0 auto; */
   }
   
   .slide {
-    display: inline-block;
-  
+    /* display: inline-block; */
+    margin-bottom: 10px;
     /* height: 400px; */
-    width: 100%;
+    /* width: 100%; */
     /* border-radius: 40px; */
   }
   

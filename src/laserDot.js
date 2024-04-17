@@ -68,10 +68,10 @@ function LaserDotChart() {
       show: true,
       color: '#000000',
   },
-    max: 2,
-    min: -2,
-    tickAmount: 10,
-    decimalsInFloat: 2,
+    max: 15,
+    min: -15,
+    tickAmount: 5,
+    decimalsInFloat: 0,
   },
   yaxis: {
     axisBorder: {
@@ -79,11 +79,11 @@ function LaserDotChart() {
       color: '#000000',
     },
     // title: {text: "[mm]", style:{color:"#000000"}},
-    tickAmount: 10,
+    tickAmount: 5,
     show: true,
-    max: 2,
-    min: -2,
-    decimalsInFloat: 2,
+    max: 15,
+    min: -15,
+    decimalsInFloat: 0,
           labels: {
             style: {
               colors: "black"

@@ -1,7 +1,7 @@
 {
   "name": "reactapp",
   "version": "0.1.0",
-  "homepage": "https://AaronS99.github.io/hmi",
+  "homepage": "https://aarons99.github.io/hmi",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
