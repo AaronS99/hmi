@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/hmi/static/css/main.9b3bc8bb.css",
-    "main.js": "/hmi/static/js/main.9d5e5687.js",
+    "main.css": "/hmi/static/css/main.87ad0e08.css",
+    "main.js": "/hmi/static/js/main.2a07fa57.js",
     "static/media/dfkiLogo.jpg": "/hmi/static/media/dfkiLogo.e3bc269dd8469a14dcaf.jpg",
     "static/media/6GHUB.png": "/hmi/static/media/6GHUB.25d6cc6203844138c05f.png",
     "static/media/pic2.png": "/hmi/static/media/pic2.3606e4cbfb7b587acf36.png",
     "static/media/pic1.png": "/hmi/static/media/pic1.da8a35710eabe302e81a.png",
+    "static/media/bmbf.jpg": "/hmi/static/media/bmbf.71da86a90e419aeb6623.jpg",
     "static/media/imgTag.png": "/hmi/static/media/imgTag.e4ecb50c7e11d8f0761a.png",
     "index.html": "/hmi/index.html",
-    "main.9b3bc8bb.css.map": "/hmi/static/css/main.9b3bc8bb.css.map",
-    "main.9d5e5687.js.map": "/hmi/static/js/main.9d5e5687.js.map"
+    "main.87ad0e08.css.map": "/hmi/static/css/main.87ad0e08.css.map",
+    "main.2a07fa57.js.map": "/hmi/static/js/main.2a07fa57.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b3bc8bb.css",
-    "static/js/main.9d5e5687.js"
+    "static/css/main.87ad0e08.css",
+    "static/js/main.2a07fa57.js"
   ]
 }
