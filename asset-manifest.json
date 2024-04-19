@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hmi/static/css/main.ba2352b1.css",
-    "main.js": "/hmi/static/js/main.d83bca2b.js",
+    "main.css": "/hmi/static/css/main.d6289d7e.css",
+    "main.js": "/hmi/static/js/main.73519e2a.js",
     "static/media/dfkiLogo.jpg": "/hmi/static/media/dfkiLogo.e3bc269dd8469a14dcaf.jpg",
     "static/media/6GHUB.png": "/hmi/static/media/6GHUB.25d6cc6203844138c05f.png",
     "static/media/pic2.png": "/hmi/static/media/pic2.3606e4cbfb7b587acf36.png",
@@ -9,11 +9,11 @@
     "static/media/bmbf.jpg": "/hmi/static/media/bmbf.71da86a90e419aeb6623.jpg",
     "static/media/imgTag.png": "/hmi/static/media/imgTag.e4ecb50c7e11d8f0761a.png",
     "index.html": "/hmi/index.html",
-    "main.ba2352b1.css.map": "/hmi/static/css/main.ba2352b1.css.map",
-    "main.d83bca2b.js.map": "/hmi/static/js/main.d83bca2b.js.map"
+    "main.d6289d7e.css.map": "/hmi/static/css/main.d6289d7e.css.map",
+    "main.73519e2a.js.map": "/hmi/static/js/main.73519e2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba2352b1.css",
-    "static/js/main.d83bca2b.js"
+    "static/css/main.d6289d7e.css",
+    "static/js/main.73519e2a.js"
   ]
 }
