@@ -67,8 +67,8 @@ function TimeSeriesChart() {
 },
     show: true,
     max: 100,
-    min: -100,
-    //decimalsInFloat: 2,
+    min: 0,
+    decimalsInFloat: 2,
           labels: {
             style: {
               colors: "black"

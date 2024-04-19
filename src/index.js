@@ -66,7 +66,7 @@ let data=[0,0];
 
 function guiData(asString) {
   let a = asString.slice(1, asString.indexOf(","));
-  let b = asString.slice(asString.indexOf(","+2, asString.indexOf("]")));
+  let b = asString.slice(asString.indexOf(",")+2, asString.indexOf("]"));
   a = Number(a);
   b = Number(b);
   data = [a, b];
@@ -80,7 +80,7 @@ function jitterData(asString) {
   let index = onlyValues.search(/[^(0-9)]/);
   if (index == -1) {
     seriesData.shift();
-    seriesData.push(Number(asString));
+    seriesData.push(Number(asString)/1000);
   }
   else {
     seriesData.shift();
