@@ -13,8 +13,9 @@ import { getElementError } from '@testing-library/react';
 
 import mqtt from "mqtt"; // import namespace "mqtt"
 
-import dfkiLogo from "./dfkiLogo.jpg"
-import GHUB from "./6GHUB.png"
+import dfkiLogo from "./dfkiLogo.jpg";
+import GHUB from "./6GHUB.png";
+import bmbf from "./bmbf.jpg";
 
 import TimeSeriesChart from './timeSeries';
 import LaserDotChart from './laserDot';
@@ -40,15 +41,15 @@ client.on("connect", () => {
     client.on("message", (topic, message) => {
       // message is Buffer
       if(topic == "gui"){
-        //console.log(message);
+        guiData(message.toString());
       }
       else if(topic == "buttons") {
 
       }
       else if(topic == "jitter") {
-
+        jitterData(message.toString());
       }
-      console.log(topic.toString() +":"+ message.toString());
+      // console.log(topic.toString() +":"+ message.toString());
       // client.end();
     });
     if (!err) {
@@ -60,7 +61,31 @@ client.on("connect", () => {
 
 let data=[0,0];
 
-
+function guiData(asString) {
+  let a = asString.slice(1, asString.indexOf(","));
+  let b = asString.slice(asString.indexOf(","+2, asString.indexOf("]")));
+  a = Number(a);
+  b = Number(b);
+  data = [a, b];
+  root.render(<Main />);
+}
+function jitterData(asString) {
+  let onlyValues = asString;
+  if(onlyValues.indexOf("-")==0) {
+    onlyValues = onlyValues.slice(1);
+  }
+  let index = onlyValues.search(/[^(0-9)]/);
+  if (index == -1) {
+    seriesData.shift();
+    seriesData.push(Number(asString));
+  }
+  else {
+    seriesData.shift();
+    asString = asString.slice(0, index);
+    seriesData.push(Number(asString)/1000);
+  }
+  root.render(<Main />);
+}
 
 
 export function getTime() {
@@ -85,12 +110,12 @@ function buttonClick(e) {
 // }]);
 // }
 
-setTimeout(()=>{
-  setInterval(() => {
-    data = [-1+Math.round(Math.random()*20)/10, -1+Math.round(Math.random()*20)/10];
-    root.render(<Main />);
-  }, 100);
-},1000)
+// setTimeout(()=>{
+//   setInterval(() => {
+//     data = [-1+Math.round(Math.random()*20)/10, -1+Math.round(Math.random()*20)/10];
+//     root.render(<Main />);
+//   }, 100);
+// },1000)
 
 class Main extends React.Component {
   render() {
@@ -101,6 +126,7 @@ class Main extends React.Component {
             <div id="flexLeft">
               <img src={dfkiLogo}  className="image"></img>
               <img src={GHUB}  className="image"></img>
+              <img src={bmbf}  className="image"></img>
               <button value="1" className="bigButtons" onClick={buttonClick}>Start</button>
               <button value="0" className="bigButtons" onClick={buttonClick}>Stopp</button>
               <button value="2" className="bigButtons" onClick={buttonClick}>Reset</button>
@@ -109,7 +135,6 @@ class Main extends React.Component {
           </div>
           <div id="bigData">
             <div id="bigTop">
-
             </div>
             <div id="bigBottom">
             <Slideshow />

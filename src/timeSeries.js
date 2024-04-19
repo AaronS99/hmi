@@ -45,14 +45,26 @@ function TimeSeriesChart() {
     type: 'numeric',
     labels: {
       show: false
-    }
+    },
   },
   yaxis: {
     axisBorder: {
       show: true,
       color: '#000000',
   },
-    title: {text: "", style:{color:"#000000"}},
+  title: {
+    text: "[µs]",
+    rotate: -0,
+    offsetX: 0,
+    offsetY: -0,
+    style: {
+        fontSize: '16px',
+        fontFamily: 'Helvetica, Arial, sans-serif',
+        fontWeight: 500,
+        color: 'black'
+        // cssClass: 'apexcharts-yaxis-title',
+    },
+},
     show: true,
     max: 100,
     min: -100,

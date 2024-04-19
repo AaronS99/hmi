@@ -11,6 +11,8 @@
 
 #inner{
     aspect-ratio: 1; 
+    height: 105%;
+    margin-top: -15px;
 }
 .charti {
 }

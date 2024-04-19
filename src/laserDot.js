@@ -7,7 +7,9 @@ function LaserDotChart() {
   var optionsT = {
     grid: {
       show: true,
-      borderColor: '#00000010',
+      // borderColor: '#00000010',
+      borderColor: '#111',
+      strokeDashArray: 1,
       opacity: 1,
       xaxis: {
         lines: {
@@ -60,34 +62,67 @@ function LaserDotChart() {
     enabled: false
   },
   xaxis: {
+    title: {
+      text: "[mm]",
+      rotate: -0,
+      offsetX: 173,
+      offsetY: -5,
+      style: {
+          fontSize: '16px',
+          fontFamily: 'Helvetica, Arial, sans-serif',
+          fontWeight: 500,
+          color: 'black'
+          // cssClass: 'apexcharts-yaxis-title',
+      },
+    },
+    floating: false,
     type: 'numeric',
     labels: {
-      show: true
+      show: true,
+      style: {
+        fontSize: '13px'
+      },
     },
     axisBorder: {
-      show: true,
+      show: false,
       color: '#000000',
   },
     max: 15,
     min: -15,
-    tickAmount: 5,
+    tickAmount: 15,
     decimalsInFloat: 0,
   },
+
   yaxis: {
     axisBorder: {
-      show: true,
+      show: false,
       color: '#000000',
     },
-    // title: {text: "[mm]", style:{color:"#000000"}},
-    tickAmount: 5,
+
+    title: {
+      text: "[mm]",
+      rotate: -0,
+      offsetX: 0,
+      offsetY: -175,
+      style: {
+          fontSize: '16px',
+          fontFamily: 'Helvetica, Arial, sans-serif',
+          fontWeight: 500,
+          color: 'black'
+          // cssClass: 'apexcharts-yaxis-title',
+      },
+  },
+    tickAmount: 15,
     show: true,
     max: 15,
     min: -15,
+
     decimalsInFloat: 0,
           labels: {
             style: {
-              colors: "black"
-            }
+              fontSize: '13px',
+              color: '#000000'
+            },
           }
   },
   legend: {

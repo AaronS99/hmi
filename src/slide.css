@@ -1,5 +1,6 @@
 .slideshow {
     margin: 0 auto;
+    margin-top: 3%;
     overflow: hidden;
     max-width: 70%;
   }
@@ -47,5 +48,5 @@
 
   .image{
     border: 1px solid black;
-    width: 80%;
+    width: 79%;
   }
