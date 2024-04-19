@@ -23,6 +23,9 @@ import Slideshow from './slide';
 
 import exImg from './imgTag.png';
 
+import imgOne from './pic1.png';
+import imgTwo from './pic2.png';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let ws;
@@ -128,16 +131,18 @@ class Main extends React.Component {
               <img src={GHUB}  className="image"></img>
               <img src={bmbf}  className="image"></img>
               <button value="1" className="bigButtons" onClick={buttonClick}>Start</button>
-              <button value="0" className="bigButtons" onClick={buttonClick}>Stopp</button>
+              <button value="0" className="bigButtons" onClick={buttonClick}>Stop</button>
               <button value="2" className="bigButtons" onClick={buttonClick}>Reset</button>
               <button value="3" className="bigButtons" onClick={buttonClick}>Demo</button>
             </div>
           </div>
           <div id="bigData">
             <div id="bigTop">
+            <img src={imgOne} class="bigImages"></img>
             </div>
             <div id="bigBottom">
-            <Slideshow />
+            <img src={imgTwo} class="bigImages"></img>
+            {/* <Slideshow /> */}
             </div>
           </div>
           <div id="rightSide">

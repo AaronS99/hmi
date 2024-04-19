@@ -36,7 +36,7 @@ function LaserDotChart() {
     size: 5,
     colors: "#ff0000",
     strokeColors: '#ff0000',
-    shape: "square"
+    shape: "circle"
   },
   // elements: {
     
@@ -63,9 +63,9 @@ function LaserDotChart() {
   },
   xaxis: {
     title: {
-      text: "[mm]",
+      text: "Offset X [mm]",
       rotate: -0,
-      offsetX: 173,
+      offsetX: 145,
       offsetY: -5,
       style: {
           fontSize: '16px',
@@ -87,9 +87,9 @@ function LaserDotChart() {
       show: false,
       color: '#000000',
   },
-    max: 15,
-    min: -15,
-    tickAmount: 15,
+    max: 16,
+    min: -16,
+    tickAmount: 16,
     decimalsInFloat: 0,
   },
 
@@ -100,10 +100,10 @@ function LaserDotChart() {
     },
 
     title: {
-      text: "[mm]",
-      rotate: -0,
+      text: "Offset Y [mm]",
+      rotate: -90,
       offsetX: 0,
-      offsetY: -175,
+      offsetY: -140,
       style: {
           fontSize: '16px',
           fontFamily: 'Helvetica, Arial, sans-serif',
@@ -112,10 +112,10 @@ function LaserDotChart() {
           // cssClass: 'apexcharts-yaxis-title',
       },
   },
-    tickAmount: 15,
+    tickAmount: 16,
     show: true,
-    max: 15,
-    min: -15,
+    max: 16,
+    min: -16,
 
     decimalsInFloat: 0,
           labels: {
